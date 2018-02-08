@@ -1,0 +1,30 @@
+{
+  "name": "spoon",
+  "private": true,
+  "license": "MIT",
+  "authors": [
+    "Sebastian De Deyne <sebastian@spatie.be>",
+    "Freek Van der Herten <freek@spatie.be>",
+    "Willem Van Bockstal <willem@spatie.be>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:spatie-custom/blender.git"
+  },
+  "scripts": {
+    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "format": "prettier --write \"**/*.{css,js,vue}\" && composer fix-cs"
+  },
+  "dependencies": {
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "caniuse-lite": "^1.0.30000697",
+    "laravel-mix": "^2.0.0",
+    "laravel-mix-purgecss": "^1.0.0",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-easy-import": "^3.0.0",
+    "prettier": "^1.10.2",
+    "tailwindcss": "^0.4.0"
+  }
+}
