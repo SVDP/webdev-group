@@ -1,44 +1,53 @@
 @component('layouts.app')
     <header>
-        <img src="" alt="" />
-        <nav>
-            <div class="">
-                <h1>
-                    <span>PHP Antwerp</span>
-                    <br />
-                    All in the same boat since 2015
-                </h1>
-                <ul>
-                    <li><a href="#">upcoming meetups</a></li>
-                    <li><a href="#">past meetups</a></li>
-                    <li><a href="#">participate</a></li>
-                </ul>
-            </div>
-        </nav>
-        <section>
-            <div class="">
-                <div class="">
-                    <h2>About PHP Antwerp</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-                <div class="">
-                    <h2>Get in touch</h2>
-                    <p>
-                        Info@phpantwerp.be
+        <div id="header-top" class="bg-brand-color-red pt-12 pb-16 text-white">
+            <img id="header-logo" class="absolute w-12" src="./images/bg-filled.svg" alt="PHP Antwerp" />
+            <div class="m-auto w-grid">
+                <nav class="flex justify-between">
+                    <h1 class="w-5/9">
+                        <span class="font-light text-3xs tracking-wider uppercase">PHP Antwerp</span>
                         <br />
-                        @phpantwerp
-                    </p>
-                    <p>
-                        github.com/phpantwerp
-                        <br />
-                        meetup.com/phpantwerp
-                    </p>
-                </div>
+                        <span class="font-text text-xs tracking-normal">All in the same boat since 2015</span>
+                    </h1>
+                    <ul class="flex font-heading font-light items-center justify-between text-3xs tracking-wider uppercase w-4/9">
+                        <li><a class="menu-item" href="#">upcoming events</a></li>
+                        <li><a class="menu-item" href="#">past events</a></li>
+                        <li><a class="menu-item" href="#">participate</a></li>
+                    </ul>
+                </nav>
+                <section class="mt-16 text-xs">
+                    <div>
+                        <h2>
+                            About PHP
+                            <br />
+                            Antwerp
+                        </h2>
+                        <p>
+                            PHP ANTWERP is not just a bunch of guys with a 21"inch laptop, pony tails and black tshirts. A rhoncus cursus nisi non eleifend.<br />
+                            Proin laoreet lacinia imperdiet. Aliquam posuere a magna sit amet blandit. Mauris eu orci urna. Phasellus ac ligula a neque eleifend suscipit a sit amet tortor. A rhoncus cursus nisi non eleifend. Proin laoreet lacinia imperdiet.
+                        </p>
+                    </div>
+                    <div>
+                        <h2>Get in touch</h2>
+                        <p>
+                            info@phpantwerp.be
+                            <br />
+                            @phpantwerp
+                        </p>
+                        <p>
+                            github.com/phpantwerp
+                            <br />
+                            meetup.be/phpantwerp
+                        </p>
+                    </div>
+                </section>
             </div>
-        </section>
-        <!-- background <div class=""></div> -->
+        </div>
+        <div id="header-bottom" class="h-24 w-full">
+            <svg class="h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <polygon points="0, 0 100, 0 100, 100">
+            </svg>
+        </div>
     </header>
     <main>
         <section>

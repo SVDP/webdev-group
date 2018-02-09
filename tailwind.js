@@ -45,6 +45,11 @@ let defaultConfig = require('tailwindcss/defaultConfig')();
 let colors = {
     transparent: 'transparent',
 
+    'brand-color-red': '#eb4d4d',
+    'brand-color-black': '#333333',
+    'brand-color-grey': '#bdbdbd',
+    'brand-color-lighter-grey': '#f2f2f2',
+
     black: '#22292f',
     'grey-darkest': '#3d4852',
     'grey-darker': '#606f7b',
@@ -164,10 +169,10 @@ module.exports = {
   */
 
     screens: {
-        sm: '576px',
-        md: '768px',
-        lg: '992px',
-        xl: '1200px',
+        'sm': '576px',
+        'md': '920px',
+        'lg': '1230px',
+        'xl': '1615px',
     },
 
     /*
@@ -189,6 +194,13 @@ module.exports = {
   */
 
     fonts: {
+        heading: [
+            'Geomanist',
+        ],
+        text: [
+            'Fira Sans',
+        ],
+
         sans: [
             'system-ui',
             'BlinkMacSystemFont',
@@ -215,7 +227,14 @@ module.exports = {
             'Georgia',
             'serif',
         ],
-        mono: ['Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace'],
+        mono: [
+            'Menlo',
+            'Monaco',
+            'Consolas',
+            'Liberation Mono',
+            'Courier New',
+            'monospace'
+        ],
     },
 
     /*
@@ -238,6 +257,11 @@ module.exports = {
   */
 
     textSizes: {
+        '5xs': '.5rem', // 8px
+        '4xs': '.562rem', // 9px
+        '3xs': '.625rem', // 10px
+        '2xs': '.687rem', // 11px
+
         xs: '.75rem', // 12px
         sm: '.875rem', // 14px
         base: '1rem', // 16px
@@ -307,9 +331,13 @@ module.exports = {
   */
 
     tracking: {
+        tighter: '-0.1em',
+
         tight: '-0.05em',
         normal: '0',
         wide: '0.05em',
+
+        wider: '0.1em',
     },
 
     /*
@@ -455,6 +483,14 @@ module.exports = {
         '5/6': '83.33333%',
         full: '100%',
         screen: '100vw',
+
+        'grid': '62.5%',
+        '1/9': '11.11111%',
+        '2/9': '22.22222%',
+        '4/9': '44.44444%',
+        '5/9': '55.55555%',
+        '7/9': '77.77777%',
+        '8/9': '88.88888%',
     },
 
     /*
@@ -602,6 +638,15 @@ module.exports = {
         '4': '1rem',
         '6': '1.5rem',
         '8': '2rem',
+
+        '10': '2.5rem',
+        '12': '3rem',
+        '14': '3.5rem',
+        '16': '4rem',
+        '18': '4.5rem',
+        '20': '5rem',
+        '22': '5.5rem',
+        '24': '6rem',
     },
 
     /*
@@ -629,6 +674,15 @@ module.exports = {
         '4': '1rem',
         '6': '1.5rem',
         '8': '2rem',
+
+        '10': '2.5rem',
+        '12': '3rem',
+        '14': '3.5rem',
+        '16': '4rem',
+        '18': '4.5rem',
+        '20': '5rem',
+        '22': '5.5rem',
+        '24': '6rem',
     },
 
     /*
@@ -655,6 +709,15 @@ module.exports = {
         '4': '1rem',
         '6': '1.5rem',
         '8': '2rem',
+
+        '10': '2.5rem',
+        '12': '3rem',
+        '14': '3.5rem',
+        '16': '4rem',
+        '18': '4.5rem',
+        '20': '5rem',
+        '22': '5.5rem',
+        '24': '6rem',
     },
 
     /*

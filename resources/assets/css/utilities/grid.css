@@ -1,0 +1,136 @@
+.grid {
+    --cols: 1fr;
+    --rows: 1fr;
+}
+
+@responsive {
+    .grid {
+        display: grid;
+    }
+
+    .gap-0 {
+        grid-gap: 0;
+    }
+
+    .gap-1 {
+        grid-gap: config('padding.1');
+    }
+
+    .gapy-1 {
+        grid-gap: config('padding.1') 0;
+    }
+
+    .gapx-1 {
+        grid-gap: 0 config('padding.1');
+    }
+
+    .gap-1 {
+        grid-gap: config('padding.1');
+    }
+
+    .gap-2 {
+        grid-gap: config('padding.2');
+    }
+
+    .gapy-2 {
+        grid-gap: config('padding.2') 0;
+    }
+
+    .gapx-2 {
+        grid-gap: 0 config('padding.2');
+    }
+
+    .gap-4 {
+        grid-gap: config('padding.4');
+    }
+
+    .gapy-4 {
+        grid-gap: config('padding.4') 0;
+    }
+
+    .gapx-4 {
+        grid-gap: 0 config('padding.4');
+    }
+
+    .gap-8 {
+        grid-gap: config('padding.8');
+    }
+
+    .gapy-8 {
+        grid-gap: config('padding.8') 0;
+    }
+
+    .gapx-8 {
+        grid-gap: 0 config('padding.8');
+    }
+
+    .gap-16 {
+        grid-gap: config('padding.16');
+    }
+
+    .gapy-16 {
+        grid-gap: config('padding.16') 0;
+    }
+
+    .gapx-16 {
+        grid-gap: 0 config('padding.16');
+    }
+
+    .grid-cols {
+        grid-template-columns: var(--cols);
+    }
+
+    .grid-flow-col {
+        grid-auto-flow: column;
+    }
+
+    .grid-rows {
+        grid-template-rows: var(--rows);
+    }
+
+    .grid-flow-row {
+        grid-auto-flow: row;
+    }
+
+    .order-0 {
+        order: 0;
+    }
+
+    .justify-self-center {
+        justify-self: center;
+    }
+
+    .justify-self-end {
+        justify-self: end;
+    }
+
+    .grid-template {
+        grid-template: var(--rows) / var(--cols);
+    }
+
+    /* span aliases - these are set for a project thumb tile */
+
+    .span-2, .grid-span-2x2 {
+        grid-column: span 2 / span 2;
+    }
+
+    .spanx-2, .grid-span-2x1 {
+        grid-column: auto / span 2;
+    }
+    
+    .spany-2, .grid-span-1x2 {
+        grid-row: span 2 / auto;
+    }
+}
+
+.grid-col-fallback {
+    float: left;
+    margin-right: 80px;
+}
+
+@supports (display: grid) {
+    .grid-col-fallback {
+        float: none;
+        margin-right: 0;
+    }
+}

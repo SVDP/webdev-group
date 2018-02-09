@@ -1,0 +1,8 @@
+#header-logo {
+    top: 40px;
+    left: 40px;
+}
+
+svg polygon {
+    fill: config(colors.brand-color-red);
+}
