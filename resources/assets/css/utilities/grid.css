@@ -117,7 +117,7 @@
     .spanx-2, .grid-span-2x1 {
         grid-column: auto / span 2;
     }
-    
+
     .spany-2, .grid-span-1x2 {
         grid-row: span 2 / auto;
     }

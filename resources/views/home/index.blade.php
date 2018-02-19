@@ -1,6 +1,6 @@
 @component('layouts.app')
     <header>
-        <div id="header-top" class="bg-brand-color-red pt-12 pb-16 text-white">
+        <div id="header-top" class="bg-brand-color-red pt-12 pb-24 text-white">
             <img id="header-logo" class="absolute w-12" src="./images/bg-filled.svg" alt="PHP Antwerp" />
             <div class="m-auto w-grid">
                 <nav class="flex justify-between">
@@ -16,8 +16,9 @@
                     </ul>
                 </nav>
                 <section class="mt-16 text-xs">
-                    <div>
-                        <h2>
+                    <hr class="bg-white">
+                    <div class="flex space-between">
+                        <h2 style="flex-basis: 60%;" class="text-base">
                             About PHP
                             <br />
                             Antwerp
@@ -27,14 +28,14 @@
                             Proin laoreet lacinia imperdiet. Aliquam posuere a magna sit amet blandit. Mauris eu orci urna. Phasellus ac ligula a neque eleifend suscipit a sit amet tortor. A rhoncus cursus nisi non eleifend. Proin laoreet lacinia imperdiet.
                         </p>
                     </div>
-                    <div>
-                        <h2>Get in touch</h2>
-                        <p>
+                    <div class="flex space-between">
+                        <h2 style="flex-basis: 60%;" class="text-base">Get in touch</h2>
+                        <p style="flex-basis: 20%;">
                             info@phpantwerp.be
                             <br />
                             @phpantwerp
                         </p>
-                        <p>
+                        <p style="flex-basis: 20%;">
                             github.com/phpantwerp
                             <br />
                             meetup.be/phpantwerp
@@ -51,99 +52,108 @@
     </header>
     <main>
         <section>
-            <h2>Upcoming meetups</h2>
-            <div class="">
-                <ul>
+            <div id="upcoming-meetups" class="m-auto py-24 w-grid">
+                <hr>
+                <h2>
+                    Upcoming
+                    <br />
+                    meetups
+                </h2>
+                <ul class="mt-16">
                     <li>
-                        <div class="">
-                            <div class="">
-                                #14
+                        <div class="border-b border-brand-color-lighter-grey flex items-center justify-between list-item py-8">
+                            <div class="font-medium font-heading text-xl text-brand-color-lighter-grey">
+                                #13
                             </div>
-                            <div class="">
-                                <span>Monday 13 februari</span>
-                                <br />
-                                19h00
-                            </div>
-                            <!--<p class="">
-                                Alfred E. Neumann, Vince Geraldi
-                            </p>-->
-                            <button type="button" name="button">I want to give a talk</button>
-                            <!--<div class="">
-                                <span>Spotcrowd</span>
-                                <br />
-                                Melkmarkt 3, Antwerp
-                            </div>-->
-                            <button type="button" name="button">I can help with a venue</button>
-                            <button type="button" name="button">Join</button>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="">
-                            <div class="">
-                                #14
-                            </div>
-                            <div class="">
+                            <div class="font-heading font-light text-3xs text-brand-color-grey uppercase">
                                 <span>Monday 13 februari 2017</span>
                                 <br />
                                 19h00
                             </div>
-                            <p class="">
-                                Alfred E. Neumann, Vince Geraldi
-                            </p>
-                            <!--<button type="button" name="button">I want to give a talk</button>-->
-                            <div class="">
-                                <span>Spotcrowd</span>
-                                <br />
-                                Melkmarkt 3, Antwerp
+                            <div>
+                                <button class="button" type="button" name="button">I want to give a talk</button>
                             </div>
-                            <!--<button type="button" name="button">I can help with a venue</button>-->
-                            <button type="button" name="button">Join</button>
+                            <div>
+                                <button class="button" type="button" name="button">I can help with a venue</button>
+                            </div>
+                            <div>
+                                <button class="button" type="button" name="button">Join</button>
+                            </div>
                         </div>
                     </li>
                     <li>
-                        <div class="">
-                            <div class="">
+                        <div class="border-b border-brand-color-lighter-grey flex items-center justify-between list-item py-8">
+                            <div class="font-medium font-heading text-xl text-brand-color-lighter-grey">
                                 #14
                             </div>
-                            <div class="">
-                                <span>Monday 13 februari 2017</span>
+                            <div class="font-heading font-light text-3xs text-brand-color-grey uppercase">
+                                <span>Tuesday 14 februari 2017</span>
                                 <br />
                                 19h00
                             </div>
-                            <p class="">
-                                Alfred E. Neumann, Vince Geraldi
-                            </p>
-                            <!--<button type="button" name="button">I want to give a talk</button>-->
                             <div class="">
+                                <p class="text-xs">
+                                    Alfred E. Neumann, Vince Geraldi
+                                </p>
+                            </div>
+                            <div class="font-heading font-light text-3xs uppercase">
                                 <span>Spotcrowd</span>
                                 <br />
                                 Melkmarkt 3, Antwerp
                             </div>
-                            <!--<button type="button" name="button">I can help with a venue</button>-->
-                            <button type="button" name="button">Join</button>
+                            <div>
+                                <button class="button" type="button" name="button">Join</button>
+                            </div>
                         </div>
                     </li>
                     <li>
-                        <div class="">
-                            <div class="">
-                                #14
+                        <div class="border-b border-brand-color-lighter-grey flex items-center justify-between list-item py-8">
+                            <div class="font-medium font-heading text-xl text-brand-color-lighter-grey">
+                                #15
                             </div>
-                            <div class="">
-                                <span>Monday 13 februari 2017</span>
+                            <div class="font-heading font-light text-3xs text-brand-color-grey uppercase">
+                                <span>Friday 23 March 2017</span>
                                 <br />
                                 19h00
                             </div>
-                            <p class="">
-                                Alfred E. Neumann, Vince Geraldi
-                            </p>
-                            <!--<button type="button" name="button">I want to give a talk</button>-->
                             <div class="">
-                                <span>Spotcrowd</span>
-                                <br />
-                                Melkmarkt 3, Antwerp
+                                <p class="text-xs">
+                                    Random name, Another random name
+                                </p>
                             </div>
-                            <!--<button type="button" name="button">I can help with a venue</button>-->
-                            <button type="button" name="button">Join</button>
+                            <div class="font-heading font-light text-3xs uppercase">
+                                <span>Random host</span>
+                                <br />
+                                Rijnkaai 24, Antwerp
+                            </div>
+                            <div>
+                                <button class="button" type="button" name="button">Join</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex items-center justify-between list-item py-8">
+                            <div class="font-medium font-heading text-xl text-brand-color-lighter-grey">
+                                #16
+                            </div>
+                            <div class="font-heading font-light text-3xs text-brand-color-grey uppercase">
+                                <span>Wednesday 28 March 2017</span>
+                                <br />
+                                19h00
+                            </div>
+                            <div class="">
+                                <p class="text-xs">
+                                    Another random name, Another random name
+                                </p>
+                            </div>
+                            <div class="font-heading font-light text-3xs uppercase">
+                                <span>Another random host</span>
+                                <br />
+                                Londenstraat 77, Antwerp
+                            </div>
+                            <div>
+                                <button class="button" type="button" name="button">Join</button>
+                            </div>
                         </div>
                     </li>
                 </ul>

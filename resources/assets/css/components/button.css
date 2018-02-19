@@ -1,0 +1,20 @@
+.button {
+    @apply .border;
+    @apply .border-brand-color-black;
+    @apply .font-heading;
+    @apply .font-light;
+    @apply .rounded-sm;
+    @apply .text-3xs;
+    @apply .tracking-wide;
+    @apply .uppercase;
+    @apply .p-3;
+    @apply .pb-2;
+
+    transition: all .2s;
+
+    &:hover {
+        @apply .bg-brand-color-red;
+        @apply .border-brand-color-red;
+        @apply .text-white;
+    }
+}
