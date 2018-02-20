@@ -1,7 +1,7 @@
 @component('layouts.app')
     <header>
         <div id="header-top" class="bg-brand-color-red pt-12 pb-24 text-white">
-            <img id="header-logo" class="absolute w-12" src="./images/bg-filled.svg" alt="PHP Antwerp" />
+            <img id="header-logo" class="absolute w-12" src="/images/bg-filled.svg" alt="PHP Antwerp" />
             <div class="m-auto w-grid">
                 <nav class="flex justify-between">
                     <h1 class="w-5/9">
@@ -28,14 +28,14 @@
                             Proin laoreet lacinia imperdiet. Aliquam posuere a magna sit amet blandit. Mauris eu orci urna. Phasellus ac ligula a neque eleifend suscipit a sit amet tortor. A rhoncus cursus nisi non eleifend. Proin laoreet lacinia imperdiet.
                         </p>
                     </div>
-                    <div class="flex space-between mt-8">
-                        <h2 style="flex-basis: 15rem;" class="flex-none text-base">Get in touch</h2>
-                        <p>
+                    <div class="flex space-between">
+                        <h2 style="--basis: 60%;" class="flex-basis text-base">Get in touch</h2>
+                        <p style="--basis: 20%;" class="flex-basis">
                             info@phpantwerp.be
                             <br />
                             @phpantwerp
                         </p>
-                        <p>
+                        <p class="flex-basis-20">
                             github.com/phpantwerp
                             <br />
                             meetup.be/phpantwerp
@@ -59,101 +59,94 @@
                     <br />
                     meetups
                 </h2>
-                <ul class="mt-16">
-                    <li>
-                        <div class="border-b border-brand-color-lighter-grey flex items-center justify-between list-item py-8">
-                            <div class="font-medium font-heading text-xl text-brand-color-lighter-grey">
-                                #13
-                            </div>
-                            <div class="font-heading font-light text-3xs text-brand-color-grey uppercase">
-                                <span>Monday 13 februari 2017</span>
-                                <br />
-                                19h00
-                            </div>
-                            <div>
-                                <button class="button" type="button" name="button">I want to give a talk</button>
-                            </div>
-                            <div>
-                                <button class="button" type="button" name="button">I can help with a venue</button>
-                            </div>
-                            <div>
-                                <button class="button" type="button" name="button">Join</button>
-                            </div>
+                <ul class="events | mt-16">
+                    <li class="event">
+                        <div class="event-nr">
+                            #13
+                        </div>
+                        <div class="font-heading font-light text-3xs text-brand-color-grey uppercase">
+                            <span>Monday 13 februari 2017</span>
+                            <br />
+                            19h00
+                        </div>
+                        <div>
+                            <a href="#" class="button">I want to give a talk</a>
+                        </div>
+                        <div>
+                            <a href="#" class="button">I can help with a venue</a>
+                        </div>
+                        <div>
+                            <a href="#" class="button">Join</a>
                         </div>
                     </li>
-                    <li>
-                        <div class="border-b border-brand-color-lighter-grey flex items-center justify-between list-item py-8">
-                            <div class="font-medium font-heading text-xl text-brand-color-lighter-grey">
-                                #14
-                            </div>
-                            <div class="font-heading font-light text-3xs text-brand-color-grey uppercase">
-                                <span>Tuesday 14 februari 2017</span>
-                                <br />
-                                19h00
-                            </div>
-                            <div class="">
-                                <p class="text-xs">
-                                    Alfred E. Neumann, Vince Geraldi
-                                </p>
-                            </div>
-                            <div class="font-heading font-light text-3xs uppercase">
-                                <span>Spotcrowd</span>
-                                <br />
-                                Melkmarkt 3, Antwerp
-                            </div>
-                            <div>
-                                <button class="button" type="button" name="button">Join</button>
-                            </div>
+                    <li class="event">
+                        <div class="font-medium font-heading text-xl text-brand-color-lighter-grey">
+                            #14
+                        </div>
+                        <div class="font-heading font-light text-3xs text-brand-color-grey uppercase">
+                            <span>Tuesday 14 februari 2017</span>
+                            <br />
+                            19h00
+                        </div>
+                        <div class="">
+                            <p class="text-xs">
+                                Alfred E. Neumann, Vince Geraldi
+                            </p>
+                        </div>
+                        <div class="font-heading font-light text-3xs uppercase">
+                            <span>Spotcrowd</span>
+                            <br />
+                            Melkmarkt 3, Antwerp
+                        </div>
+                        <div>
+                            {{-- Dit worden waarschijnlijk links --}}
+                            <a href="#" class="button">Join</a>
                         </div>
                     </li>
-                    <li>
-                        <div class="border-b border-brand-color-lighter-grey flex items-center justify-between list-item py-8">
-                            <div class="font-medium font-heading text-xl text-brand-color-lighter-grey">
-                                #15
-                            </div>
-                            <div class="font-heading font-light text-3xs text-brand-color-grey uppercase">
-                                <span>Friday 23 March 2017</span>
-                                <br />
-                                19h00
-                            </div>
-                            <div class="">
-                                <p class="text-xs">
-                                    Random name, Another random name
-                                </p>
-                            </div>
-                            <div class="font-heading font-light text-3xs uppercase">
-                                <span>Random host</span>
-                                <br />
-                                Rijnkaai 24, Antwerp
-                            </div>
-                            <div>
-                                <button class="button" type="button" name="button">Join</button>
-                            </div>
+                    <li class="event">
+                        <div class="font-medium font-heading text-xl text-brand-color-lighter-grey">
+                            #15
+                        </div>
+                        <div class="font-heading font-light text-3xs text-brand-color-grey uppercase">
+                            <span>Friday 23 March 2017</span>
+                            <br />
+                            19h00
+                        </div>
+                        <div class="">
+                            <p class="text-xs">
+                                Random name, Another random name
+                            </p>
+                        </div>
+                        <div class="font-heading font-light text-3xs uppercase">
+                            <span>Random host</span>
+                            <br />
+                            Rijnkaai 24, Antwerp
+                        </div>
+                        <div>
+                            <a href="#" class="button">Join</a>
                         </div>
                     </li>
-                    <li>
-                        <div class="flex items-center justify-between list-item py-8">
-                            <div class="font-medium font-heading text-xl text-brand-color-lighter-grey">
-                                #16
-                            </div>
-                            <div class="font-heading font-light text-3xs text-brand-color-grey uppercase">
-                                <span>Wednesday 28 March 2017</span>
-                                <br />
-                                19h00
-                            </div>
-                            <div>
-                                <p class="text-xs">
-                                    Another random name, Another random name
-                                </p>
-                            </div>
-                            <div class="font-heading font-light text-3xs uppercase">
-                                <span>Another random host</span>
-                                <br />
-                                Londenstraat 77, Antwerp
-                            </div>
-                            <div>
-                                <button class="button" type="button" name="button">Join</button>
-                            </div>
+                    <li class="event">
+                        <div class="font-medium font-heading text-xl text-brand-color-lighter-grey">
+                            #16
+                        </div>
+                        <div class="font-heading font-light text-3xs text-brand-color-grey uppercase">
+                            <span>Wednesday 28 March 2017</span>
+                            <br />
+                            19h00
+                        </div>
+                        <div class="">
+                            <p class="text-xs">
+                                Another random name, Another random name
+                            </p>
+                        </div>
+                        <div class="font-heading font-light text-3xs uppercase">
+                            <span>Another random host</span>
+                            <br />
+                            Londenstraat 77, Antwerp
+                        </div>
+                        <div>
+                            <a href="#" class="button">Join</a>
                         </div>
                     </li>
                 </ul>

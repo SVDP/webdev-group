@@ -1,11 +1,8 @@
-.grid {
-    --cols: 1fr;
-    --rows: 1fr;
-}
-
 @responsive {
     .grid {
         display: grid;
+        --cols: 1fr;
+        --rows: 1fr;
     }
 
     .gap-0 {

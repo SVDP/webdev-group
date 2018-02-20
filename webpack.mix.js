@@ -13,7 +13,14 @@ mix
         postCss: [
             require('postcss-easy-import')(),
             require('tailwindcss')('./tailwind.js'),
-            require('postcss-cssnext')(),
+            require('postcss-cssnext')({
+                features: {
+                    rem: false,
+                    customProperties: {
+                        warnings: false
+                    },
+                }
+              }),
         ],
 
         // CSSNext already processes our css with Autoprefixer, so we don't
