@@ -1,0 +1,14 @@
+.square {
+    @apply .relative;
+    @apply .w-full;
+
+    &:after {
+        content: '';
+        display: block;
+        padding: 0 0 100% 0;
+    }
+
+    & img {
+        object-fit: cover;
+    }
+}

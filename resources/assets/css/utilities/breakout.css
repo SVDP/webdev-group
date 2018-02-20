@@ -1,0 +1,13 @@
+.break-out {
+    height: 410px;
+    min-width: 50vw;
+    object-fit: cover;
+}
+
+.break-out-left {
+    margin: 0 0 0 -17vw;
+}
+
+.break-out-right {
+    margin: 0 -17vw 0 0;
+}

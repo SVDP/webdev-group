@@ -3,6 +3,6 @@
     left: 40px;
 }
 
-svg polygon {
+header svg polygon {
     fill: config(colors.brand-color-red);
 }
