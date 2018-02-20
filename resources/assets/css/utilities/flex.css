@@ -1,0 +1,19 @@
+.flex-basis {
+    --basis: 100%;
+
+    flex-basis:  var(--basis);
+}
+
+/* …Of */
+
+.flex-basis-20 {
+    @apply flex-basis;
+
+    flex-basis: 20%;
+}
+
+.flex-basis-60 {
+    @apply flex-basis;
+
+    flex-basis: 60%;
+}

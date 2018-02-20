@@ -7,6 +7,7 @@
 
         <title>{{ config('app.name') }}</title>
 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:300">
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
         <script defer src="{{ mix('js/app.js') }}"></script>
