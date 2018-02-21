@@ -1,36 +1,36 @@
 @component('layouts.app')
     <header>
         <div id="header-top" class="bg-brand-color-red pt-12 pb-24 text-white">
-            <img id="header-logo" class="absolute w-12" src="/images/bg-filled.svg" alt="PHP Antwerp" />
+            <img id="header-bg" class="text-bg | absolute w-full" src="/images/header-bg.svg" />
             <div class="m-auto w-grid">
-                <nav class="flex justify-between">
-                    <h1 class="w-5/9">
-                        <span class="font-light text-3xs tracking-wider uppercase">PHP Antwerp</span>
+                <nav class="flex justify-end | bt:justify-between">
+                    <img id="header-logo" class="absolute w-12 z-10" src="/images/logo-filled.svg" alt="PHP Antwerp" />
+                    <h1 class="leading-less w-full | bt:w-auto">
+                        <span class="font-normal text-3xs tracking-wider uppercase">PHP Antwerp</span>
                         <br />
                         <span class="font-text text-xs tracking-normal">All in the same boat since 2015</span>
                     </h1>
-                    <ul class="flex font-heading font-light items-center justify-between text-3xs tracking-wider uppercase w-4/9">
-                        <li><a class="menu-item" href="#">upcoming events</a></li>
-                        <li><a class="menu-item" href="#">past events</a></li>
-                        <li><a class="menu-item" href="#">participate</a></li>
+                    <ul class="flex font-heading font-normal items-center justify-between text-3xs tracking-wider uppercase w-4/9">
+                        <li><a class="menu-item" href="#upcoming-meetups">upcoming <span class="menu-item-large">events</span></a></li>
+                        <li><a class="menu-item" href="#past-meetups">past <span class="menu-item-large">events</span></a></li>
+                        <li><a class="menu-item" href="#participate">participate</a></li>
                     </ul>
                 </nav>
                 <section class="mt-16 text-xs">
                     <hr class="bg-white">
-                    <div class="flex space-between">
-                        <h2 style="flex-basis: 15rem;" class="flex-none text-base">
+                    <div style="--cols: 14em auto;" class="header-content">
+                        <h2 class="text-base">
                             About PHP
                             <br />
                             Antwerp
                         </h2>
                         <p>
-                            PHP ANTWERP is not just a bunch of guys with a 21"inch laptop, pony tails and black tshirts. A rhoncus cursus nisi non eleifend.<br />
-                            Proin laoreet lacinia imperdiet. Aliquam posuere a magna sit amet blandit. Mauris eu orci urna. Phasellus ac ligula a neque eleifend suscipit a sit amet tortor. A rhoncus cursus nisi non eleifend. Proin laoreet lacinia imperdiet.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
                     </div>
-                    <div class="flex space-between">
-                        <h2 style="--basis: 60%;" class="flex-basis text-base">Get in touch</h2>
-                        <p style="--basis: 20%;" class="flex-basis">
+                    <div style="--cols: repeat(3, 14em);" class="header-content | mt-8">
+                        <h2 class="text-base">Get in touch</h2>
+                        <p>
                             info@phpantwerp.be
                             <br />
                             @phpantwerp
@@ -44,30 +44,30 @@
                 </section>
             </div>
         </div>
-        <div id="header-bottom" class="h-24 w-full">
+        <div id="header-bottom" class="h-24 mb-24 w-full">
             <svg class="h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <polygon points="0, 0 100, 0 100, 100">
+                <polygon class="header-polygon" points="0, 0 100, 0 100, 100">
             </svg>
         </div>
     </header>
     <main>
         <section>
-            <div id="upcoming-meetups" class="m-auto py-24 w-grid">
+            <div id="upcoming-meetups" class="m-auto mb-24 w-grid">
                 <hr>
                 <h2>
-                    Upcoming
-                    <br />
-                    meetups
+                    Upcoming meetups
                 </h2>
-                <ul class="events | mt-16">
-                    <li class="event">
-                        <div class="event-nr">
-                            #13
-                        </div>
-                        <div class="font-heading font-light text-3xs text-brand-color-grey uppercase">
-                            <span>Monday 13 februari 2017</span>
-                            <br />
-                            19h00
+                <div class="events | mt-16">
+                    <div class="event">
+                        <div class="flex flex-none">
+                            <div class="event-nr">
+                                #13
+                            </div>
+                            <div class="font-heading font-normal text-3xs text-brand-color-grey uppercase">
+                                Monday 13 februari 2017
+                                <br />
+                                19h00
+                            </div>
                         </div>
                         <div>
                             <a href="#" class="button">I want to give a talk</a>
@@ -78,106 +78,109 @@
                         <div>
                             <a href="#" class="button">Join</a>
                         </div>
-                    </li>
-                    <li class="event">
-                        <div class="font-medium font-heading text-xl text-brand-color-lighter-grey">
-                            #14
+                    </div>
+                    <div class="event">
+                        <div class="flex flex-none">
+                            <div class="event-nr">
+                                #14
+                            </div>
+                            <div class="font-heading font-normal text-3xs text-brand-color-grey uppercase">
+                                Tuesday 14 februari 2017
+                                <br />
+                                19h00
+                            </div>
                         </div>
-                        <div class="font-heading font-light text-3xs text-brand-color-grey uppercase">
-                            <span>Tuesday 14 februari 2017</span>
-                            <br />
-                            19h00
-                        </div>
-                        <div class="">
+                        <div>
                             <p class="text-xs">
                                 Alfred E. Neumann, Vince Geraldi
                             </p>
                         </div>
-                        <div class="font-heading font-light text-3xs uppercase">
-                            <span>Spotcrowd</span>
+                        <div class="font-heading font-normal text-3xs uppercase">
+                            Spotcrowd
                             <br />
                             Melkmarkt 3, Antwerp
                         </div>
                         <div>
-                            {{-- Dit worden waarschijnlijk links --}}
                             <a href="#" class="button">Join</a>
                         </div>
-                    </li>
-                    <li class="event">
-                        <div class="font-medium font-heading text-xl text-brand-color-lighter-grey">
-                            #15
+                    </div>
+                    <div class="event">
+                        <div class="flex flex-none">
+                            <div class="event-nr">
+                                #15
+                            </div>
+                            <div class="font-heading font-normal text-3xs text-brand-color-grey uppercase">
+                                Friday 23 March 2017
+                                <br />
+                                19h00
+                            </div>
                         </div>
-                        <div class="font-heading font-light text-3xs text-brand-color-grey uppercase">
-                            <span>Friday 23 March 2017</span>
-                            <br />
-                            19h00
-                        </div>
-                        <div class="">
+                        <div>
                             <p class="text-xs">
                                 Random name, Another random name
                             </p>
                         </div>
-                        <div class="font-heading font-light text-3xs uppercase">
-                            <span>Random host</span>
+                        <div class="font-heading font-normal text-3xs uppercase">
+                            Random host
                             <br />
                             Rijnkaai 24, Antwerp
                         </div>
                         <div>
                             <a href="#" class="button">Join</a>
                         </div>
-                    </li>
-                    <li class="event">
-                        <div class="font-medium font-heading text-xl text-brand-color-lighter-grey">
-                            #16
+                    </div>
+                    <div class="event">
+                        <div class="flex flex-none">
+                            <div class="event-nr">
+                                #16
+                            </div>
+                            <div class="font-heading font-normal text-3xs text-brand-color-grey uppercase">
+                                Wednesday 28 March 2017
+                                <br />
+                                19h00
+                            </div>
                         </div>
-                        <div class="font-heading font-light text-3xs text-brand-color-grey uppercase">
-                            <span>Wednesday 28 March 2017</span>
-                            <br />
-                            19h00
-                        </div>
-                        <div class="">
+                        <div>
                             <p class="text-xs">
                                 Another random name, Another random name
                             </p>
                         </div>
-                        <div class="font-heading font-light text-3xs uppercase">
-                            <span>Another random host</span>
+                        <div class="font-heading font-normal text-3xs uppercase">
+                            Another random host
                             <br />
                             Londenstraat 77, Antwerp
                         </div>
                         <div>
                             <a href="#" class="button">Join</a>
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </section>
         <section>
-            <div class="m-auto py-24 w-grid">
+            <div id="past-meetups" class="m-auto mb-24 w-grid">
                 <hr>
                 <h2>
-                    Past
-                    <br />
-                    meetups
+                    Past meetups
                 </h2>
-                <div class="flex mt-16">
-                    <div class="w-1/2">
-                        <img class="break-out break-out-left" src="https://images.unsplash.com/photo-1518107616985-bd48230d3b20?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a0ef47dbfd623936425d08a198107b3e&auto=format&fit=crop&w=1950&q=80" alt="" />
+                <div class="mt-16 | md:flex">
+                    <div class="w-full | md:w-1/2">
+                        <img class="break-out break-out-left shadow" src="https://images.unsplash.com/photo-1518107616985-bd48230d3b20?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a0ef47dbfd623936425d08a198107b3e&auto=format&fit=crop&w=1950&q=80" alt="event #11" />
                         <div class="mt-8 mr-8">
-                            <h4 class="leading-tight text-4xl">
-                                <span class="font-normal text-3xs tracking-wide">#13 — 21 december 2016</span>
+                            <h4 class="leading-tight text-3xl">
+                                <span class="font-light text-3xs tracking-wide">#11 — 21 december 2016</span>
                                 <br />
                                 hosted by PHPRO
                             </h4>
                             <div class="flex mt-8 space-between">
-                                <div class="mr-16">
-                                    <h5 class="font-light text-3xs text-brand-color-grey uppercase">Speakers</h5>
+                                <div class="mr-8 | md:mr-16">
+                                    <h5 class="font-normal text-3xs text-brand-color-grey uppercase">Speakers</h5>
                                     <ul class="text-xs">
                                         <li>Alfred E. Neumann</li>
                                     </ul>
                                 </div>
                                 <div>
-                                    <h5 class="font-light text-3xs text-brand-color-grey uppercase">Feedback</h5>
+                                    <h5 class="font-normal text-3xs text-brand-color-grey uppercase">Feedback</h5>
                                     <ul class="text-xs">
                                         <li>Feedback on Meetup</li>
                                         <li>Join.in</li>
@@ -187,24 +190,24 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-1/2">
-                        <img class="break-out mt-8" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e5a31d03ddee66863a599421f792e07b&auto=format&fit=crop&w=1950&q=80" alt="" />
-                        <div class="mt-8 ml-8">
-                            <h4 class="leading-tight text-4xl">
-                                <span class="font-normal text-3xs tracking-wide">#13 — 21 december 2016</span>
+                    <div class="mt-16 w-full | md:w-1/2 md:mt-0">
+                        <img class="break-out shadow | mt-8" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e5a31d03ddee66863a599421f792e07b&auto=format&fit=crop&w=1950&q=80" alt="event 12" />
+                        <div class="mt-8 | md:ml-8">
+                            <h4 class="leading-tight text-3xl">
+                                <span class="font-light text-3xs tracking-wide">#12 — 21 december 2016</span>
                                 <br />
                                 hosted by MCS
                             </h4>
                             <div class="flex mt-8 space-between">
-                                <div class="mr-16">
-                                    <h5 class="font-light text-3xs text-brand-color-grey uppercase">Speakers</h5>
+                                <div class="mr-8 | md:mr-16">
+                                    <h5 class="font-normal text-3xs text-brand-color-grey uppercase">Speakers</h5>
                                     <ul class="text-xs">
                                         <li>Alfred E. Neumann</li>
                                         <li>Vince Geraldi</li>
                                     </ul>
                                 </div>
                                 <div>
-                                    <h5 class="font-light text-3xs text-brand-color-grey uppercase">Feedback</h5>
+                                    <h5 class="font-normal text-3xs text-brand-color-grey uppercase">Feedback</h5>
                                     <ul class="text-xs">
                                         <li>Feedback on Meetup</li>
                                         <li>Join.in</li>
@@ -212,90 +215,92 @@
                                     </ul>
                                 </div>
                             </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--<section>
-            <div class="m-auto w-grid">
+        <section>
+            <div id="participate" class="m-auto mb-24 w-grid">
                 <hr>
                 <h2>Participate</h2>
-                <div class="flex">
-                    <div class="w-1/3">
-                        <div class="square w-2/3">
-                            <img class="absolute h-full w-full" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e5a31d03ddee66863a599421f792e07b&auto=format&fit=crop&w=1950&q=80" alt="">
+                <div class="mt-16 | flex">
+                    <div class="pr-4 w-1/3">
+                        <div class="image shadow small | mb-6">
+                            <img class="absolute h-full w-full" src="https://images.unsplash.com/photo-1514302240736-b1fee5985889?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd67c5d168faa96f37e825a562005e12&auto=format&fit=crop&w=1567&q=80" alt="image">
                         </div>
-                        <div class="square">
-                            <img class="absolute h-full w-full" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e5a31d03ddee66863a599421f792e07b&auto=format&fit=crop&w=1950&q=80" alt="">
+                        <div class="image shadow">
+                            <img class="absolute h-full w-full" src="https://images.unsplash.com/photo-1514302240736-b1fee5985889?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd67c5d168faa96f37e825a562005e12&auto=format&fit=crop&w=1567&q=80" alt="image">
                         </div>
-                        <div>
+                        <div class="my-6">
                             <h3>
                                 Give
                                 <br />
                                 a talk
                             </h3>
-                            <p class="text-xs">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <p class="mt-6 text-xs">
+                                That's awesome! Head over to the issue list to see if there are still meetups which are looking for a speaker. If none are available, why don't you start your own meetup? We'll gladly help you out! Or perhaps another meetup group in Belgium is still looking for speakers? Definitely go checkout meetup.com.
                             </p>
                         </div>
                     </div>
-                    <div class="w-1/3">
-                        <div class="square">
-                            <img class="absolute h-full w-full" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e5a31d03ddee66863a599421f792e07b&auto=format&fit=crop&w=1950&q=80" alt="">
+                    <div class="px-2 w-1/3">
+                        <div class="image shadow">
+                            <img class="absolute h-full w-full" src="https://images.unsplash.com/photo-1514302240736-b1fee5985889?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd67c5d168faa96f37e825a562005e12&auto=format&fit=crop&w=1567&q=80" alt="image">
                         </div>
-                        <div>
+                        <div class="my-6">
                             <h3>
                                 Host
                                 <br />
                                 a meetup
                             </h3>
-                            <p class="text-xs">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <p class="mt-6 text-xs">
+                                Thanks for helping out! If you want to host a meetup, open up an issue, fill in all the details and we'll get back to you as soon as possible! Or check out the open issues and see which ones still need a venue.
                             </p>
                         </div>
-                        <div class="square">
-                            <img class="absolute h-full w-full" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e5a31d03ddee66863a599421f792e07b&auto=format&fit=crop&w=1950&q=80" alt="">
+                        <div class="image shadow">
+                            <img class="absolute h-full w-full" src="https://images.unsplash.com/photo-1514302240736-b1fee5985889?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd67c5d168faa96f37e825a562005e12&auto=format&fit=crop&w=1567&q=80" alt="image">
                         </div>
-                        <div class="square w-2/3">
-                            <img class="absolute h-full w-full" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e5a31d03ddee66863a599421f792e07b&auto=format&fit=crop&w=1950&q=80" alt="">
+                        <div class="image shadow small | mt-6">
+                            <img class="absolute h-full w-full" src="https://images.unsplash.com/photo-1514302240736-b1fee5985889?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd67c5d168faa96f37e825a562005e12&auto=format&fit=crop&w=1567&q=80" alt="image">
                         </div>
                     </div>
-                    <div class="w-1/3">
-                        <div>
+                    <div class="mt-24 pl-4 w-1/3">
+                        <div class="my-6">
                             <h3>
                                 Attend
                                 <br />
                                 a meetup
                             </h3>
-                            <p class="text-xs">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <p class="mt-6 text-xs">
+                                Always welcome! Just confirm your attendance on Meetup so we know how many of you will join us. Definitely go checkout meetup.com.
                             </p>
                         </div>
-                        <div class="square">
-                            <img class="absolute h-full w-full" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e5a31d03ddee66863a599421f792e07b&auto=format&fit=crop&w=1950&q=80" alt="">
+                        <div class="image shadow">
+                            <img class="absolute h-full w-full" src="https://images.unsplash.com/photo-1514302240736-b1fee5985889?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd67c5d168faa96f37e825a562005e12&auto=format&fit=crop&w=1567&q=80" alt="image">
                         </div>
-                        <div>
+                        <div class="my-6">
                             <h3>
                                 Sponsor
                                 <br />
                                 us
                             </h3>
-                            <p class="text-xs">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <p class="mt-6 text-xs">
+                                We're always actively looking for sponsors to help out so we can pay meetup.com, promotional material and offer some swag to the attendees. If you want to sponsor, send an email to dries.vints@gmail.com and we'll get back to you as soon as possible.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>-->
+        </section>
     </main>
     <!--<footer>
         <div id="footer-top" class="h-24 w-full">
             <svg class="h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <polygon points="100, 0 100, 100 0, 100">
+                <polygon class="footer-polygon" points="100, 100  0, 100 0, 0">
             </svg>
         </div>
         <div id="footer-bottom" class="bg-brand-color-black pt-24 pb-12 text-white">
+            <img id="footer-bg" class="text-bg | absolute w-full" src="/images/footer-bg.svg" />
             <div class="m-auto w-grid">
                 <section>
                     <div class="">

@@ -1,8 +1,22 @@
-#header-logo {
-    top: 40px;
-    left: 40px;
+#header-bg {
+    filter: drop-shadow(12px 12px 20px #d44551);
 }
 
-header svg polygon {
+#header-logo {
+    @screen bt {
+        left: calc(-8.5vw - 1.5rem);
+    }
+}
+
+.header-polygon {
     fill: config(colors.brand-color-red);
+}
+
+.header-content {
+    @apply grid;
+    @apply gap-4;
+
+    @screen md {
+        @apply grid-cols;
+    }
 }

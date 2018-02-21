@@ -45,8 +45,8 @@ let defaultConfig = require('tailwindcss/defaultConfig')();
 let colors = {
     transparent: 'transparent',
 
-    'brand-color-red': '#eb4d4d',
-    'brand-color-black': '#333333',
+    'brand-color-red': '#eb5757',
+    'brand-color-black': '#232323',
     'brand-color-grey': '#bdbdbd',
     'brand-color-lighter-grey': '#f2f2f2',
 
@@ -170,6 +170,7 @@ module.exports = {
 
     screens: {
         'sm': '576px',
+        'bt': '748px',
         'md': '920px',
         'lg': '1230px',
         'xl': '1615px',
@@ -195,7 +196,7 @@ module.exports = {
 
     fonts: {
         heading: [
-            'Geomanist',
+            'Geomanistweb',
         ],
         text: [
             'Fira Sans',
@@ -267,6 +268,7 @@ module.exports = {
         base: '1rem', // 16px
         lg: '1.125rem', // 18px
         xl: '1.25rem', // 20px
+
         '2xl': '1.5rem', // 24px
         '3xl': '1.875rem', // 30px
         '4xl': '2.25rem', // 36px
@@ -312,6 +314,8 @@ module.exports = {
   */
 
     leading: {
+        less: 0.75,
+
         none: 1,
         tight: 1.25,
         normal: 1.5,

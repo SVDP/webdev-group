@@ -21,10 +21,6 @@
         grid-gap: 0 config('padding.1');
     }
 
-    .gap-1 {
-        grid-gap: config('padding.1');
-    }
-
     .gap-2 {
         grid-gap: config('padding.2');
     }
@@ -103,6 +99,11 @@
 
     .grid-template {
         grid-template: var(--rows) / var(--cols);
+    }
+
+    .grid-item-position {
+        grid-column: var(--colstart) / var(--colend);
+        grid-row: var(--rowstart) / var(--rowend);
     }
 
     /* span aliases - these are set for a project thumb tile */

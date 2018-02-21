@@ -1,6 +1,25 @@
-.square {
+.shadow {
+    box-shadow: 10px 10px 40px 0 rgba(51, 51, 51, 0);
+    transition: box-shadow .4s, filter .4s, opacity .4s, transform .4s;
+
+    &:hover {
+        box-shadow: 10px 10px 40px 0 rgba(51, 51, 51, 0.2);
+        filter: grayscale(0);
+        opacity: 1;
+        transform: rotate(1.5deg) scale(1.02);
+
+        @screen md {
+            transform: scale(1.04);
+        }
+    }
+}
+
+.image {
     @apply .relative;
     @apply .w-full;
+
+    filter: grayscale(1);
+    opacity: 0.8;
 
     &:after {
         content: '';
@@ -8,7 +27,17 @@
         padding: 0 0 100% 0;
     }
 
+    &:hover {
+        transform: rotate(1.5deg) scale(1.02);
+    }
+
     & img {
         object-fit: cover;
     }
+}
+
+.small {
+    @apply w-2/3;
+
+    margin-left: 33.33333%;
 }

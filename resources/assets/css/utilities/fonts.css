@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Geomanistweb';
+    src: url('/fonts/geomanist/geomanist-regular-webfont.eot');
+    src: url('/fonts/geomanist/geomanist-regular-webfont.woff2') format('woff2'),
+         url('/fonts/geomanist/geomanist-regular-webfont.woff') format('woff'),
+         url('/fonts/geomanist/geomanist-regular-webfont.ttf') format('truetype'),
+         url('/fonts/geomanist/geomanist-regular-webfont.svg#Geomanistweb') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geomanistweb';
+    src: url('/fonts/geomanist/geomanist-book-webfont.eot');
+    src: url('/fonts/geomanist/geomanist-book-webfont.woff2') format('woff2'),
+         url('/fonts/geomanist/geomanist-book-webfont.woff') format('woff'),
+         url('/fonts/geomanist/geomanist-book-webfont.ttf') format('truetype'),
+         url('/fonts/geomanist/geomanist-book-webfont.svg#Geomanistweb') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geomanistweb';
+    src: url('/fonts/geomanist/geomanist-medium-webfont.eot');
+    src: url('/fonts/geomanist/geomanist-medium-webfont.woff2') format('woff2'),
+         url('/fonts/geomanist/geomanist-medium-webfont.woff') format('woff'),
+         url('/fonts/geomanist/geomanist-medium-webfont.ttf') format('truetype'),
+         url('/fonts/geomanist/geomanist-medium-webfont.svg#Geomanistweb') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}

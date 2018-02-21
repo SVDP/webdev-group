@@ -1,3 +1,7 @@
-footer svg polygon {
+#footer-bg {
+    filter: drop-shadow(12px 12px 20px #191919);
+}
+
+.footer-polygon {
     fill: config(colors.brand-color-black);
 }

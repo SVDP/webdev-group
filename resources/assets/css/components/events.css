@@ -1,33 +1,32 @@
-/* 
-    Dit zou ik herwerken naar CSS Grid ipv Flex gezien het 2-dimensionaal is
-    en er een volledige component `events.css` van maken die de inhoud wat beter beschrijft 
-
-    Onafgewerkte code hieronder…
-*/
-
 .events {
-    /* Eventuele container styles */
+    /* code */
 }
 
 .event {
-    /* Een grid met template. Default is rows, vanaf bepaald breekpunt naar cols */
-    @apply grid gap-4 py-4;
+    @apply grid;
+    @apply gap-4;
+    @apply items-center;
+    @apply py-8;
 
     @screen md {
-        @apply grid-cols ;
+        @apply grid-cols;
     }
-    
-    --cols: 3em repeat(3, 1fr) auto;
-    
+
+    --cols: 15fr repeat(2, 12fr) auto;
+
     &:not(:last-child) {
-        @apply border-b border-brand-color-lighter-grey;
+        @apply border-b;
+        @apply border-brand-color-lighter-grey;
     }
 }
 
 /* Eventueel sub-elementen er uit trekken */
 
 .event-nr {
-    @apply font-medium font-heading text-xl text-brand-color-lighter-grey;
+    @apply font-heading;
+    @apply font-bold;
+    @apply text-brand-color-lighter-grey;
+    @apply text-xl;
+
+    flex-basis: 2.8em;
 }
-
-

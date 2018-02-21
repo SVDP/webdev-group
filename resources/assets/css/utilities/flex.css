@@ -1,7 +1,7 @@
 .flex-basis {
     --basis: 100%;
 
-    flex-basis:  var(--basis);
+    flex-basis: var(--basis);
 }
 
 /* …Of */

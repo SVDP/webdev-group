@@ -2,13 +2,12 @@
     @apply border;
     @apply border-brand-color-black;
     @apply font-heading;
-    @apply font-light;
+    @apply font-normal;
     @apply rounded-sm;
     @apply text-3xs;
     @apply tracking-wide;
     @apply uppercase;
     @apply p-3;
-    @apply pb-2;
 
     transition: background-color .2s, border-color .2s, color .2s;
 

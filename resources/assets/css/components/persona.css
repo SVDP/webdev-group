@@ -1,9 +1,0 @@
-.persona {
-    @apply .w-1/3;
-
-    & img {
-        @apply .rounded-full;
-
-        object-fit: cover;
-    }
-}

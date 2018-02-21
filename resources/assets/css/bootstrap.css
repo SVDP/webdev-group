@@ -35,9 +35,13 @@ html {
 
 h1, h2, h3, h4, h5, h6 {
     @apply font-heading;
-    @apply font-medium;
+    @apply font-bold;
     @apply leading-normal;
     @apply tracking-wide;
+}
+
+p {
+    @apply text-justify;
 }
 
 a {
@@ -62,4 +66,10 @@ hr {
 
     height: 3px;
     width: 20px;
+}
+
+.text-bg {
+    opacity: 0.7;
+    top: 50%;
+    transform: translateY(-50%);
 }
