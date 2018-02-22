@@ -5,3 +5,29 @@
 .footer-polygon {
     fill: config(colors.brand-color-black);
 }
+
+.footer-content {
+    @apply flex;
+    @apply items-center;
+    @apply text-xs;
+
+    & img {
+        @apply rounded-full;
+    }
+}
+
+.footer-icons {
+    @apply gap-8;
+    @apply grid;
+    @apply grid-cols;
+
+    --cols: repeat(2, 1fr);
+
+    @screen sm {
+        --cols: repeat(5, 1fr);
+    }
+
+    @screen md {
+        --cols: repeat(10, 1fr);
+    }
+}

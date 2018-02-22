@@ -9,7 +9,7 @@
         transform: rotate(1.5deg) scale(1.02);
 
         @screen md {
-            transform: scale(1.04);
+            transform: scale(1.02);
         }
     }
 }

@@ -1,5 +1,5 @@
 @component('layouts.app')
-    <header>
+    <header class="overflow-hidden">
         <div id="header-top" class="bg-brand-color-red pt-12 pb-24 text-white">
             <img id="header-bg" class="text-bg | absolute w-full" src="/images/header-bg.svg" />
             <div class="m-auto w-grid">
@@ -91,7 +91,7 @@
                             </div>
                         </div>
                         <div>
-                            <p class="text-xs">
+                            <p class="text-left text-xs">
                                 Alfred E. Neumann, Vince Geraldi
                             </p>
                         </div>
@@ -116,7 +116,7 @@
                             </div>
                         </div>
                         <div>
-                            <p class="text-xs">
+                            <p class="text-left text-xs">
                                 Random name, Another random name
                             </p>
                         </div>
@@ -141,7 +141,7 @@
                             </div>
                         </div>
                         <div>
-                            <p class="text-xs">
+                            <p class="text-left text-xs">
                                 Another random name, Another random name
                             </p>
                         </div>
@@ -172,7 +172,7 @@
                                 <br />
                                 hosted by PHPRO
                             </h4>
-                            <div class="flex mt-8 space-between">
+                            <div class="flex mt-8">
                                 <div class="mr-8 | md:mr-16">
                                     <h5 class="font-normal text-3xs text-brand-color-grey uppercase">Speakers</h5>
                                     <ul class="text-xs">
@@ -198,7 +198,7 @@
                                 <br />
                                 hosted by MCS
                             </h4>
-                            <div class="flex mt-8 space-between">
+                            <div class="flex mt-8">
                                 <div class="mr-8 | md:mr-16">
                                     <h5 class="font-normal text-3xs text-brand-color-grey uppercase">Speakers</h5>
                                     <ul class="text-xs">
@@ -224,8 +224,9 @@
             <div id="participate" class="m-auto mb-24 w-grid">
                 <hr>
                 <h2>Participate</h2>
-                <div class="mt-16 | flex">
-                    <div class="pr-4 w-1/3">
+                <div class="mt-16 | md:flex">
+                    <!-- left section -->
+                    <div class="w-full | md:pr-4 md:w-1/3">
                         <div class="image shadow small | mb-6">
                             <img class="absolute h-full w-full" src="https://images.unsplash.com/photo-1514302240736-b1fee5985889?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd67c5d168faa96f37e825a562005e12&auto=format&fit=crop&w=1567&q=80" alt="image">
                         </div>
@@ -243,7 +244,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="px-2 w-1/3">
+                    <!-- middle section -->
+                    <div class="w-full | md:px-2 md:w-1/3">
                         <div class="image shadow">
                             <img class="absolute h-full w-full" src="https://images.unsplash.com/photo-1514302240736-b1fee5985889?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd67c5d168faa96f37e825a562005e12&auto=format&fit=crop&w=1567&q=80" alt="image">
                         </div>
@@ -264,7 +266,8 @@
                             <img class="absolute h-full w-full" src="https://images.unsplash.com/photo-1514302240736-b1fee5985889?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd67c5d168faa96f37e825a562005e12&auto=format&fit=crop&w=1567&q=80" alt="image">
                         </div>
                     </div>
-                    <div class="mt-24 pl-4 w-1/3">
+                    <!-- right section -->
+                    <div class="w-full | md:w-1/3 md:mt-24 md:pl-4">
                         <div class="my-6">
                             <h3>
                                 Attend
@@ -293,7 +296,7 @@
             </div>
         </section>
     </main>
-    <!--<footer>
+    <footer class="overflow-hidden">
         <div id="footer-top" class="h-24 w-full">
             <svg class="h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
                 <polygon class="footer-polygon" points="100, 100  0, 100 0, 0">
@@ -303,27 +306,32 @@
             <img id="footer-bg" class="text-bg | absolute w-full" src="/images/footer-bg.svg" />
             <div class="m-auto w-grid">
                 <section>
-                    <div class="">
-                        <h2>Organized by</h2>
-                        <div class="persona">
-                            <img src="https://images.unsplash.com/photo-1504884790557-80daa3a9e621?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f105fd4834aecbe56af935dfb8bec57e&auto=format&fit=crop&w=2734&q=80" alt="" />
-                            <p>
+                    <div style="--cols: repeat(3, 1fr);" class="grid gap-8 | md:grid-cols">
+                        <div class="footer-content">
+                            <div class="image shadow">
+                                <img class="absolute h-full w-full" src="https://images.unsplash.com/photo-1507081323647-4d250478b919?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0fa4d3f142cecc5b16f59f21f8630923&auto=format&fit=crop&w=1000&q=80" alt="persona">
+                            </div>
+                            <p class="ml-4">
                                 <span>Alfred E. Neumann</span>
                                 <br />
                                 @alfredeneumann
                             </p>
                         </div>
-                        <div class="persona">
-                            <img src="https://images.unsplash.com/photo-1504884790557-80daa3a9e621?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f105fd4834aecbe56af935dfb8bec57e&auto=format&fit=crop&w=2734&q=80" alt="" />
-                            <p>
+                        <div class="footer-content">
+                            <div class="image shadow">
+                                <img class="absolute h-full w-full" src="https://images.unsplash.com/photo-1507081323647-4d250478b919?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0fa4d3f142cecc5b16f59f21f8630923&auto=format&fit=crop&w=1000&q=80" alt="persona">
+                            </div>
+                            <p class="ml-4">
                                 <span>Alfred E. Neumann</span>
                                 <br />
                                 @alfredeneumann
                             </p>
                         </div>
-                        <div class="persona">
-                            <img src="https://images.unsplash.com/photo-1504884790557-80daa3a9e621?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f105fd4834aecbe56af935dfb8bec57e&auto=format&fit=crop&w=2734&q=80" alt="" />
-                            <p>
+                        <div class="footer-content">
+                            <div class="image shadow">
+                                <img class="absolute h-full w-full" src="https://images.unsplash.com/photo-1507081323647-4d250478b919?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0fa4d3f142cecc5b16f59f21f8630923&auto=format&fit=crop&w=1000&q=80" alt="persona">
+                            </div>
+                            <p class="ml-4">
                                 <span>Alfred E. Neumann</span>
                                 <br />
                                 @alfredeneumann
@@ -331,21 +339,21 @@
                         </div>
                     </div>
                 </section>
-                <section>
-                    <div class="">
-                        <h2>Proudly sponsored by</h2>
-                        <img src="" alt="" />
-                        <img src="" alt="" />
-                        <img src="" alt="" />
-                        <img src="" alt="" />
-                        <img src="" alt="" />
-                        <img src="" alt="" />
-                        <img src="" alt="" />
-                        <img src="" alt="" />
-                        <img src="" alt="" />
+                <section class="my-16">
+                    <div class="footer-icons">
+                        <img src="/images/icon.svg" alt="icon" />
+                        <img src="/images/icon.svg" alt="icon" />
+                        <img src="/images/icon.svg" alt="icon" />
+                        <img src="/images/icon.svg" alt="icon" />
+                        <img src="/images/icon.svg" alt="icon" />
+                        <img src="/images/icon.svg" alt="icon" />
+                        <img src="/images/icon.svg" alt="icon" />
+                        <img src="/images/icon.svg" alt="icon" />
+                        <img src="/images/icon.svg" alt="icon" />
+                        <img src="/images/icon.svg" alt="icon" />
                     </div>
                 </section>
             </div>
         </div>
-    </footer>-->
+    </footer>
 @endcomponent
