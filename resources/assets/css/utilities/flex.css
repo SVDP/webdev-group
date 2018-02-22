@@ -4,8 +4,6 @@
     flex-basis: var(--basis);
 }
 
-/* …Of */
-
 .flex-basis-20 {
     @apply flex-basis;
 

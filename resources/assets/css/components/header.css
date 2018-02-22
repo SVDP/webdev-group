@@ -1,8 +1,6 @@
-#header-bg {
-    filter: drop-shadow(12px 12px 20px #d44551);
-}
-
-#header-logo {
+.header-logo {
+    @apply absolute;
+    
     @screen bt {
         left: calc(-8.5vw - 1.5rem);
     }

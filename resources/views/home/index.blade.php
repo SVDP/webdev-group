@@ -1,10 +1,10 @@
 @component('layouts.app')
     <header class="overflow-hidden">
-        <div id="header-top" class="bg-brand-color-red pt-12 pb-24 text-white">
-            <img id="header-bg" class="text-bg | absolute w-full" src="/images/header-bg.svg" />
+        <div class="header-top | bg-brand-color-red pt-12 pb-24 text-white">
+            <img class="watermark watermark-header" src="/images/header-bg.svg" />
             <div class="m-auto w-grid">
                 <nav class="flex justify-end | bt:justify-between">
-                    <img id="header-logo" class="absolute w-12 z-10" src="/images/logo-filled.svg" alt="PHP Antwerp" />
+                    <img class="header-logo | w-12 z-10" src="/images/logo-filled.svg" alt="PHP Antwerp" />
                     <h1 class="leading-less w-full | bt:w-auto">
                         <span class="font-normal text-3xs tracking-wider uppercase">PHP Antwerp</span>
                         <br />
@@ -44,7 +44,7 @@
                 </section>
             </div>
         </div>
-        <div id="header-bottom" class="h-24 mb-24 w-full">
+        <div class="header-bottom | h-24 mb-24 w-full">
             <svg class="h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
                 <polygon class="header-polygon" points="0, 0 100, 0 100, 100">
             </svg>
@@ -165,7 +165,7 @@
                 </h2>
                 <div class="mt-16 | md:flex">
                     <div class="w-full | md:w-1/2">
-                        <img class="break-out break-out-left shadow" src="https://images.unsplash.com/photo-1518107616985-bd48230d3b20?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a0ef47dbfd623936425d08a198107b3e&auto=format&fit=crop&w=1950&q=80" alt="event #11" />
+                        <img class="break-out break-out-left image-shadow" src="https://images.unsplash.com/photo-1518107616985-bd48230d3b20?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a0ef47dbfd623936425d08a198107b3e&auto=format&fit=crop&w=1950&q=80" alt="event #11" />
                         <div class="mt-8 mr-8">
                             <h4 class="leading-tight text-3xl">
                                 <span class="font-light text-3xs tracking-wide">#11 — 21 december 2016</span>
@@ -191,7 +191,7 @@
                         </div>
                     </div>
                     <div class="mt-16 w-full | md:w-1/2 md:mt-0">
-                        <img class="break-out shadow | mt-8" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e5a31d03ddee66863a599421f792e07b&auto=format&fit=crop&w=1950&q=80" alt="event 12" />
+                        <img class="break-out image-shadow | mt-8" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e5a31d03ddee66863a599421f792e07b&auto=format&fit=crop&w=1950&q=80" alt="event 12" />
                         <div class="mt-8 | md:ml-8">
                             <h4 class="leading-tight text-3xl">
                                 <span class="font-light text-3xs tracking-wide">#12 — 21 december 2016</span>
@@ -225,18 +225,18 @@
                 <hr>
                 <h2>Participate</h2>
                 <div class="mt-16 | md:flex">
-                    <!-- left section -->
+                    {{-- left section --}}
                     <div class="w-full | md:pr-4 md:w-1/3">
-                        <div class="image shadow small | mb-6">
+                        <div class="image image-shadow image-small | hidden mb-6 | md:block">
                             <img class="absolute h-full w-full" src="https://images.unsplash.com/photo-1514302240736-b1fee5985889?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd67c5d168faa96f37e825a562005e12&auto=format&fit=crop&w=1567&q=80" alt="image">
                         </div>
-                        <div class="image shadow">
+                        <div class="image image-shadow | hidden | md:block">
                             <img class="absolute h-full w-full" src="https://images.unsplash.com/photo-1514302240736-b1fee5985889?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd67c5d168faa96f37e825a562005e12&auto=format&fit=crop&w=1567&q=80" alt="image">
                         </div>
                         <div class="my-6">
                             <h3>
                                 Give
-                                <br />
+                                <br class="hidden | md:block" />
                                 a talk
                             </h3>
                             <p class="mt-6 text-xs">
@@ -244,47 +244,47 @@
                             </p>
                         </div>
                     </div>
-                    <!-- middle section -->
+                    {{-- middle section --}}
                     <div class="w-full | md:px-2 md:w-1/3">
-                        <div class="image shadow">
+                        <div class="image image-shadow | hidden | md:block">
                             <img class="absolute h-full w-full" src="https://images.unsplash.com/photo-1514302240736-b1fee5985889?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd67c5d168faa96f37e825a562005e12&auto=format&fit=crop&w=1567&q=80" alt="image">
                         </div>
                         <div class="my-6">
                             <h3>
                                 Host
-                                <br />
+                                <br class="hidden | md:block" />
                                 a meetup
                             </h3>
                             <p class="mt-6 text-xs">
                                 Thanks for helping out! If you want to host a meetup, open up an issue, fill in all the details and we'll get back to you as soon as possible! Or check out the open issues and see which ones still need a venue.
                             </p>
                         </div>
-                        <div class="image shadow">
+                        <div class="image image-shadow | hidden | md:block">
                             <img class="absolute h-full w-full" src="https://images.unsplash.com/photo-1514302240736-b1fee5985889?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd67c5d168faa96f37e825a562005e12&auto=format&fit=crop&w=1567&q=80" alt="image">
                         </div>
-                        <div class="image shadow small | mt-6">
+                        <div class="image image-shadow image-small | hidden mt-6 | md:block">
                             <img class="absolute h-full w-full" src="https://images.unsplash.com/photo-1514302240736-b1fee5985889?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd67c5d168faa96f37e825a562005e12&auto=format&fit=crop&w=1567&q=80" alt="image">
                         </div>
                     </div>
-                    <!-- right section -->
+                    {{-- right section --}}
                     <div class="w-full | md:w-1/3 md:mt-24 md:pl-4">
                         <div class="my-6">
                             <h3>
                                 Attend
-                                <br />
+                                <br class="hidden | md:block" />
                                 a meetup
                             </h3>
                             <p class="mt-6 text-xs">
                                 Always welcome! Just confirm your attendance on Meetup so we know how many of you will join us. Definitely go checkout meetup.com.
                             </p>
                         </div>
-                        <div class="image shadow">
+                        <div class="image image-shadow | hidden | md:block">
                             <img class="absolute h-full w-full" src="https://images.unsplash.com/photo-1514302240736-b1fee5985889?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd67c5d168faa96f37e825a562005e12&auto=format&fit=crop&w=1567&q=80" alt="image">
                         </div>
                         <div class="my-6">
                             <h3>
                                 Sponsor
-                                <br />
+                                <br class="hidden | md:block" />
                                 us
                             </h3>
                             <p class="mt-6 text-xs">
@@ -297,19 +297,19 @@
         </section>
     </main>
     <footer class="overflow-hidden">
-        <div id="footer-top" class="h-24 w-full">
+        <div class="footer-top | h-24 w-full">
             <svg class="h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
                 <polygon class="footer-polygon" points="100, 100  0, 100 0, 0">
             </svg>
         </div>
-        <div id="footer-bottom" class="bg-brand-color-black pt-24 pb-12 text-white">
-            <img id="footer-bg" class="text-bg | absolute w-full" src="/images/footer-bg.svg" />
+        <div class="footer-bottom | bg-brand-color-black pt-24 pb-12 text-white">
+            <img class="watermark watermark-footer | w-full" src="/images/footer-bg.svg" />
             <div class="m-auto w-grid">
                 <section>
                     <div style="--cols: repeat(3, 1fr);" class="grid gap-8 | md:grid-cols">
                         <div class="footer-content">
-                            <div class="image shadow">
-                                <img class="absolute h-full w-full" src="https://images.unsplash.com/photo-1507081323647-4d250478b919?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0fa4d3f142cecc5b16f59f21f8630923&auto=format&fit=crop&w=1000&q=80" alt="persona">
+                            <div class="max-w-2xs">
+                                <img class="absolute h-full w-full" src="https://research.vu.nl/files-asset/9682727/Pasfoto_KLBatenburg.jpg" alt="persona">
                             </div>
                             <p class="ml-4">
                                 <span>Alfred E. Neumann</span>
@@ -318,8 +318,8 @@
                             </p>
                         </div>
                         <div class="footer-content">
-                            <div class="image shadow">
-                                <img class="absolute h-full w-full" src="https://images.unsplash.com/photo-1507081323647-4d250478b919?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0fa4d3f142cecc5b16f59f21f8630923&auto=format&fit=crop&w=1000&q=80" alt="persona">
+                            <div class="max-w-2xs">
+                                <img class="absolute h-full w-full" src="https://research.vu.nl/files-asset/9682727/Pasfoto_KLBatenburg.jpg" alt="persona">
                             </div>
                             <p class="ml-4">
                                 <span>Alfred E. Neumann</span>
@@ -328,8 +328,8 @@
                             </p>
                         </div>
                         <div class="footer-content">
-                            <div class="image shadow">
-                                <img class="absolute h-full w-full" src="https://images.unsplash.com/photo-1507081323647-4d250478b919?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0fa4d3f142cecc5b16f59f21f8630923&auto=format&fit=crop&w=1000&q=80" alt="persona">
+                            <div class="max-w-2xs">
+                                <img class="absolute h-full w-full" src="https://research.vu.nl/files-asset/9682727/Pasfoto_KLBatenburg.jpg" alt="persona">
                             </div>
                             <p class="ml-4">
                                 <span>Alfred E. Neumann</span>

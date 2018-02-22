@@ -7,9 +7,7 @@
     padding: 0;
     color: inherit;
     font: inherit;
-
-    &:after,
-    &:before {
+    &:after, &:before {
         box-sizing: inherit;
     }
 }
@@ -20,14 +18,11 @@ html {
     @apply leading-loose;
     @apply text-brand-color-black;
     @apply tracking-normal;
-
     box-sizing: border-box;
     font-size: 16px;
-
     @screen lg {
         font-size: 1.3vw;
     }
-
     @screen xl {
         font-size: 21px;
     }
@@ -48,13 +43,11 @@ a {
     text-decoration: none;
 }
 
-ol,
-ul {
+ol, ul {
     list-style: none;
 }
 
-img,
-svg {
+img, svg {
     display: block;
     vertical-align: middle;
 }
@@ -63,14 +56,6 @@ hr {
     @apply bg-brand-color-black;
     @apply mb-10;
     @apply -ml-5;
-
     height: 3px;
     width: 20px;
-}
-
-.text-bg {
-    min-width: 1600px;
-    opacity: 0.7;
-    top: 50%;
-    transform: translateY(-50%);
 }
