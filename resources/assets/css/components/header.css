@@ -1,13 +1,13 @@
 .header-logo {
     @apply absolute;
-    
+
     @screen bt {
         left: calc(-8.5vw - 1.5rem);
     }
 }
 
 .header-polygon {
-    fill: config(colors.brand-color-red);
+    fill: config(colors.white);
 }
 
 .header-content {

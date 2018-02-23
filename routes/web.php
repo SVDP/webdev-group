@@ -12,3 +12,4 @@
 */
 
 Route::view('/', 'home.index');
+Route::view('/meetup', 'detail.meetup');

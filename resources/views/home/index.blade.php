@@ -1,6 +1,6 @@
 @component('layouts.app')
     <header class="overflow-hidden">
-        <div class="header-top | bg-brand-color-red pt-12 pb-24 text-white">
+        <div class="header-top | bg-brand-color-red mb-24 pt-12 pb-48 text-white">
             <img class="watermark watermark-header" src="/images/header-bg.svg" />
             <div class="m-auto w-grid">
                 <nav class="flex justify-end | bt:justify-between">
@@ -43,20 +43,18 @@
                     </div>
                 </section>
             </div>
-        </div>
-        <div class="header-bottom | h-24 mb-24 w-full">
-            <svg class="h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <polygon class="header-polygon" points="0, 0 100, 0 100, 100">
-            </svg>
+            <div class="header-bottom | absolute h-24 pin-b w-full">
+                <svg class="h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <polygon class="header-polygon" points="0, 0 0, 100 100, 100">
+                </svg>
+            </div>
         </div>
     </header>
     <main>
         <section>
             <div id="upcoming-meetups" class="m-auto mb-24 w-grid">
                 <hr>
-                <h2>
-                    Upcoming meetups
-                </h2>
+                <h2>Upcoming meetups</h2>
                 <div class="events | mt-16">
                     <div class="event">
                         <div class="flex flex-none">
@@ -157,21 +155,21 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="overflow-hidden">
             <div id="past-meetups" class="m-auto mb-24 w-grid">
                 <hr>
-                <h2>
-                    Past meetups
-                </h2>
+                <h2>Past meetups</h2>
                 <div class="mt-16 | md:flex">
                     <div class="w-full | md:w-1/2">
-                        <img class="break-out break-out-left image-shadow" src="https://images.unsplash.com/photo-1518107616985-bd48230d3b20?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a0ef47dbfd623936425d08a198107b3e&auto=format&fit=crop&w=1950&q=80" alt="event #11" />
-                        <div class="mt-8 mr-8">
-                            <h4 class="leading-tight text-3xl">
-                                <span class="font-light text-3xs tracking-wide">#11 — 21 december 2016</span>
-                                <br />
-                                hosted by PHPRO
-                            </h4>
+                        <img class="break-out break-out-left image-shadow | w-full" src="https://images.unsplash.com/photo-1518107616985-bd48230d3b20?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a0ef47dbfd623936425d08a198107b3e&auto=format&fit=crop&w=1950&q=80" alt="event #11" />
+                        <div class="mt-8">
+                            <a href="/meetup">
+                                <h4 class="leading-tight text-3xl">
+                                    <span class="font-light text-3xs tracking-wide">#11 — 21 december 2016</span>
+                                    <br />
+                                    hosted by PHPRO
+                                </h4>
+                            </a>
                             <div class="flex mt-8">
                                 <div class="mr-8 | md:mr-16">
                                     <h5 class="font-normal text-3xs text-brand-color-grey uppercase">Speakers</h5>
@@ -191,13 +189,15 @@
                         </div>
                     </div>
                     <div class="mt-16 w-full | md:w-1/2 md:mt-0">
-                        <img class="break-out image-shadow | mt-8" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e5a31d03ddee66863a599421f792e07b&auto=format&fit=crop&w=1950&q=80" alt="event 12" />
+                        <img class="break-out image-shadow | mt-8 w-full" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e5a31d03ddee66863a599421f792e07b&auto=format&fit=crop&w=1950&q=80" alt="event 12" />
                         <div class="mt-8 | md:ml-8">
-                            <h4 class="leading-tight text-3xl">
-                                <span class="font-light text-3xs tracking-wide">#12 — 21 december 2016</span>
-                                <br />
-                                hosted by MCS
-                            </h4>
+                            <a href="/meetup">
+                                <h4 class="leading-tight text-3xl">
+                                    <span class="font-light text-3xs tracking-wide">#12 — 21 december 2016</span>
+                                    <br />
+                                    hosted by MCS
+                                </h4>
+                            </a>
                             <div class="flex mt-8">
                                 <div class="mr-8 | md:mr-16">
                                     <h5 class="font-normal text-3xs text-brand-color-grey uppercase">Speakers</h5>
@@ -297,12 +297,12 @@
         </section>
     </main>
     <footer class="overflow-hidden">
-        <div class="footer-top | h-24 w-full">
-            <svg class="h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <polygon class="footer-polygon" points="100, 100  0, 100 0, 0">
-            </svg>
-        </div>
-        <div class="footer-bottom | bg-brand-color-black pt-24 pb-12 text-white">
+        <div class="footer-bottom | bg-brand-color-black mt-24 pt-48 pb-24 text-white">
+            <div class="footer-top | absolute h-24 pin-t w-full">
+                <svg class="h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <polygon class="footer-polygon" points="0, 0 100, 0 100, 100">
+                </svg>
+            </div>
             <img class="watermark watermark-footer | w-full" src="/images/footer-bg.svg" />
             <div class="m-auto w-grid">
                 <section>
